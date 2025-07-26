@@ -1,7 +1,10 @@
-kind: Pod
 apiVersion: v1
+kind: Pod
 metadata:
-  name: multi-containers
+  name: multi-container
+  labels:
+    project: roboshop
+    purpose: multi-container-demo
 spec:
   containers:
   - name: nginx
